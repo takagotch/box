@@ -51,6 +51,14 @@ with requests.Session() as session:
 box_source.url
 box_source.status_code
 box_source.raw.reason
+
+
+evil_box = Box(default_box=True, default_box_attr="Something Something Something Dark Side")
+evil_box.not_defined
+evil_box.not_defined.something_else
+cameled = Box(BadHabit="I just can't stop!", camel_killer_box=True)
+cameled.bad_habit
+
 ```
 
 ```sh
